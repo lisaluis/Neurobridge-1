@@ -8,6 +8,7 @@ RUN pip install -r requirements.txt
 COPY agent ./agent
 COPY nbapp ./nbapp
 COPY scripts ./scripts
+RUN sed -i "s/\r$//" scripts/*.sh
 RUN useradd -m appuser && mkdir -p /tmp/neurobridge && chown -R appuser /app /tmp/neurobridge
 USER appuser
 ENV NEUROBRIDGE_APP_DB=/tmp/neurobridge/app.sqlite3 \
