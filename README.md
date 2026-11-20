@@ -1,4 +1,7 @@
 # NeuroBridge — v0.6 (web app + deep agent)
+live demo
+## Live demo
+**https://neurobridge-428948222095.asia-south1.run.app**
 
 > **Quick start (Colab):** upload `NeuroBridge_Deep_Agent_v0.6.zip` to My Drive, open
 > **`RUN_NeuroBridge_Website.ipynb`** in Colab, add `GROQ_API_KEY`, `GEMINI_API_KEY`,
