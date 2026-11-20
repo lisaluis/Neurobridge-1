@@ -1,4 +1,6 @@
 # Demo
+Live site (hosted models): the agent, web search, booking, community.
+Colab: the same website, with your NeuroBridge SFT+ORPO model selected in the Assistant’s model dropdown. 
 ## Live demo
 **https://neurobridge-428948222095.asia-south1.run.app**
 
