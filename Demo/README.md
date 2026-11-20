@@ -1,13 +1,12 @@
 # Demo
-Live site (hosted models): the agent, web search, booking, community.
-Colab: the same website, with your NeuroBridge SFT+ORPO model selected in the Assistant’s model dropdown. 
+- **Live site** (hosted models Groq and Gemini): the agent, web search, booking and community.
+- **Colab** (T4 GPU): the same website, with our own NeuroBridge SFT+ORPO model selectable in the Assistant's model menu.
 ## Live demo
 **https://neurobridge-428948222095.asia-south1.run.app**
 
 ## Start the website in Google Colab (about 5 minutes)
 
-1. Download this repository as a zip (**Code → Download ZIP** on GitHub) and upload it to the
-   top of your Google Drive (*My Drive*).
+1. Nothing to download: the notebook gets the code from GitHub by itself.
 2. Open [`RUN_NeuroBridge_Website.ipynb`](RUN_NeuroBridge_Website.ipynb) in Google Colab.
 3. Click the 🔑 key icon (*Secrets*) and add, with **Notebook access** on:
    - `GROQ_API_KEY` (console.groq.com)
