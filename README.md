@@ -1,5 +1,4 @@
 # NeuroBridge: an AI support platform for neurodivergent people and their caregivers
-https://neurobridge-428948222095.asia-south1.run.app
 
 
 **Group Maple**
