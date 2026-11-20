@@ -13,7 +13,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import Optional, List, Dict, Any
 
-from fastapi import FastAPI, HTTPException, Header
+from fastapi import FastAPI, HTTPException, Header, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse
 from pydantic import BaseModel, Field
@@ -226,8 +226,12 @@ def _require_agent():
 
 # ----------------------------------------------------------------- general
 @app.get("/")
-def root():
-    return {"name": "NeuroBridge API", "status": "running", "version": "0.5.0",
+def root(request: Request):
+    # A person opening the bare link in a browser gets the website; API clients get JSON.
+    if "text/html" in request.headers.get("accept", ""):
+        from fastapi.responses import RedirectResponse
+        return RedirectResponse("/app")
+    return {"name": "NeuroBridge API", "status": "running", "version": "0.6.0",
             "modes": ["chat", "agent"], "app": "/app", "ui": "/ui",
             "notice": "Caregiver-support assistant. Not a doctor or an emergency service."}
 
