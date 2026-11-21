@@ -32,9 +32,14 @@ and a moderated community.
 
 ## Live demo
 
-**https://neurobridge-428948222095.asia-south1.run.app**
+
 **With our own fine-tuned models (GPU):** https://neurobridge-models-428948222095.asia-southeast1.run.app
 Choose *NeuroBridge SFT* in the Assistant's model menu. The first reply can take about a minute while the model loads.
+
+
+
+
+wihtout our trained models :**https://neurobridge-428948222095.asia-south1.run.app**
 
 | Role | Email | Password |
 |---|---|---|
